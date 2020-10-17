@@ -1,0 +1,94 @@
+@media all and (min-width: 480px) {
+
+    *{
+        margin: 0px;
+        padding: 0px;
+    }
+
+    /*HEADER*-----------------------------------------------------------------------------------------------------------------------------------------------*/
+    header{
+        background-color: #bcd4cc;
+        border-bottom: 1px solid;
+        padding: 5px;
+        box-shadow: 5px 10px #ccc;
+    }
+
+    .flex-head{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding-top: 10px;
+    }
+
+    /*LOGO*-----------------------------------------------------------------------------------------------------------------------------------------------*/
+    .flex-head h1{
+        margin-top: 0px;
+        font-size: 35px;
+        font-family: "LeadvilleW00-Regular";
+    }
+
+    /*LOGIN*---------------------------------------------------------------------------------------------------------------------------------------*/
+    .login{
+        width: 30px;
+        padding-right: 20px;
+    }
+
+    .login img{
+        width: 40px;
+    }
+
+    .login p{
+        display: none;
+    }
+
+    /*SANDWICH MENU*---------------------------------------------------------------------------------------------------------------------------------------*/
+    .sandwich-box{
+        width: 30px;
+        padding-left: 15px;
+    }
+
+    .sandwich-icon{
+        width: 35px;
+        height: 5px;
+        background-color:#000000;
+        margin: 6px 0;
+    }
+
+    /*NAV*------------------------------------------------------------------------------------------------------------------------------------------------*/
+    nav li{
+        display: none;
+    }
+
+}
+
+
+
+@media all and (min-width: 768px) {
+
+
+
+}
+
+
+
+@media all and (min-width: 900px) {
+
+
+
+}
+
+
+
+@media all and (min-width: 1024px) {
+
+
+
+}
+
+
+
+@media all and (min-width: 1200px) {
+
+
+
+}

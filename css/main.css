@@ -1,0 +1,227 @@
+@media all and (min-width: 480px) {
+    a{
+        text-decoration: none;
+    }
+    
+    a:hover{
+        color: #000000;
+        text-decoration: underline;
+    }
+
+    /*DATE*-----------------------------------------------------------------------*/
+    .date{
+        position: relative;
+        margin-top: 10px;
+        padding: 12px 0px 12px 10px;
+        font-family: Arial, Helvetica, sans-serif;
+        color: #9b9b9b;
+    }
+    
+    /*PRINCIPAL NOTICE*-----------------------------------------------------------------*/
+    .first-notice {
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+        border-bottom: 1px solid #ccc;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .title-principal h2{
+        margin-bottom: 10px;
+        color: #000000;
+        font-size: 22px;
+        font-weight: bolder;
+    }
+    
+    .img-principal img{
+        justify-content: space-around;
+        width: 100%;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        border-top: 1px solid #ccc;
+    }
+
+    .text-principal{
+        color: #000000;
+        font-weight: lighter;
+
+    }
+
+    .section-principal{
+        display: flex;
+        justify-content: flex-end;
+        padding-right: 30px;;
+        margin-top: 10px;
+        padding-bottom: 15px;
+    }
+
+    .section-principal a{
+        color: #9b9b9b;
+        font-weight: lighter;
+        font-style: oblique;
+    }
+
+    .related-news li{
+        list-style-type: square;
+        margin-bottom: 10px;
+    }
+
+    .related-news a{
+        color: #000000;
+        font-weight: bolder;
+    }
+    
+    /* NOTICE*-----------------------------------------------------------------*/
+    .notice{
+        display: flex;
+        flex-direction: column;
+        padding: 15px;
+        border-bottom: 1px solid #ccc;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .flex-notice{
+        display: flex;
+        flex-wrap: nowrap;
+        align-items: center;
+    }
+
+    .img img{
+        width: 250px;
+    }
+
+    .section{
+        display: flex;
+        justify-content: flex-end;
+        padding-right: 30px;;
+        
+    }
+
+    .section a{
+        color: #9b9b9b;
+        font-weight: lighter;
+        font-style: oblique;
+    }
+
+    .title h3{
+        padding-left: 20px;
+        color: #000000;
+        font-size: 16px;
+        font-weight: bolder;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    
+    .text{
+        display:none;
+    }
+
+    .banner-food, .banner img{
+        display: none;
+    }
+}
+
+@media all and (min-width: 768px) {
+    /*PRINCIPAL NOTICE*-----------------------------------------------------------------*/
+    .principal{
+        width: 100%;
+    }
+    .principal-notice {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .title-principal h2{
+        font-size: 32px;
+    }
+
+    .img-principal img{
+        width: 100%;
+        border-top: 1px solid #ccc;
+    }
+
+    .related-news{
+        display: flex;
+        justify-content: flex-end;
+        margin-top: 20px;
+    }
+
+    /*NOTICE*--------------------------------------------------------------------*/
+    .column{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .title-left{
+        margin-right: 10px;
+    }
+
+    .second-notice{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .second-title{
+        padding-top: 15px;
+        padding-bottom: 10px;
+    }
+
+    .text{
+        display: block;
+        padding-bottom: 15px;
+    }
+
+    .img img{
+        padding-bottom: 10px;
+    }
+
+    .flex-food{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .flex-food img{
+        padding-top: 10px;
+    }
+
+    .text-food{
+        padding-left: 20px;
+    }
+
+    .section-food{
+        margin-top: 0px;
+        padding-top: 0px;
+    }
+
+    .banner-food, .banner{
+        display: block;
+    }
+
+    .banner-food img{
+        width: 100%;
+    }
+
+}
+
+
+
+@media all and (min-width: 900px) {
+
+
+
+}
+
+
+
+@media all and (min-width: 1024px) {
+
+
+
+}
+
+
+
+@media all and (min-width: 1200px) {
+
+
+
+}
