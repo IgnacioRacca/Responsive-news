@@ -158,7 +158,7 @@
         display:none;
     }
 
-    .banner-food, .banner-tech, .hidden-text, .lateral, .only-may-to-1024, .banner-center, .only-may-to-1024-notice{
+    .banner-food, .banner-tech, .banner-center, .hidden-text, .lateral, .only-may-to-1024, .banner-center, .only-may-to-1024-notice{
         display: none;
     }
 }
@@ -335,6 +335,10 @@
         padding-top: 15px;
     }
 
+    .banner-center img{
+        width: 100%;
+    }
+
     .banner-top img{
         display: flex;
         flex-wrap: nowrap;
@@ -350,10 +354,14 @@
         flex-wrap: nowrap;
     }
 
+    .principal-right{
+        width:80%;
+    }
+
     .lateral{
         display: block;
-        width: 20%;
         border-left: 1px solid #ccc;
+        margin-right: 15px;
         margin-bottom: 15px;
     }
 
