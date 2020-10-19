@@ -194,6 +194,8 @@
     }
 
     /*NOTICE*--------------------------------------------------------------------*/
+    
+    
     .column{
         display: flex;
         flex-direction: row;
@@ -473,7 +475,17 @@
 
 
 @media all and (min-width: 1200px) {
+    .aside-hidden{
+        display: flex;
+        flex-direction: column;
+    }
 
+    .none-notice{
+        display: flex;
+    }
 
+    .sub-notice{
+        padding-top: 20px;
+    }
 
 }
