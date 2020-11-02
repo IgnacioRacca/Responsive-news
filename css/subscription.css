@@ -17,8 +17,12 @@
 	}
 
 	.login{
-        padding-right: 50px;
-    }
+        padding-right: 30px;
+	}
+	
+	#output{
+		padding-bottom: 50px;
+	}
 
 	.form {
 		display: grid;
