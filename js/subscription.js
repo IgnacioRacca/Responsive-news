@@ -110,6 +110,13 @@ const validationAge = function(){
 	}
 }
 
+
+focusMethod= function focus() {
+	document.getElementById(`group-age`).classList.remove('form-group-incorrect');
+	document.querySelector(`#group-age .form-input-error`).classList.remove('form-input-error-active');
+	document.querySelector(`#group-age .form-input-error2`).classList.remove('form-input-error-active');
+}
+	
 inputs.forEach(function(input) {
 	input.addEventListener('blur', validationForm);
 });

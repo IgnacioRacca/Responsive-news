@@ -85,7 +85,7 @@
 		margin: 0;
 	}
 
-	.form-group-btn-send {
+	.form-group-btn-send, div:last-child {
 		display: flex;
 		flex-direction: column;
 		align-items: center;
@@ -140,7 +140,7 @@
 	}
 
 
-	.form-message, .form-group-btn-send {
+	.form-message, .form-group-btn-send, div:last-child {
 		grid-column: span 2;
 	}
 
