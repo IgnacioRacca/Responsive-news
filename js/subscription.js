@@ -61,7 +61,44 @@ const validationForm = function(e) {
 	}
 }
 
+const focusMethod = function(e) {
+	switch (e.target.name) {
+		case "name":
+			validationFocus(regular.name, e.target, e.target.name);
+		break;
+		case "mail":
+			validationFocus(regular.mail, e.target, e.target.name);
+		break;
+		case "password":
+			validationFocus(regular.password, e.target, e.target.name);
+		break;
+		case "age":
+			validationFocus();
+		break;
+		case "phone":
+			validationFocus(regular.phone, e.target, e.target.name);
+		break;
+		case "street":
+			validationFocus(regular.street, e.target, e.target.name);
+		break;
+		case "city":
+			validationFocus(regular.city, e.target, e.target.name);
+		break;
+		case "cp":
+			validationFocus(regular.cp, e.target, e.target.name);
+		break;
+		case "dni":
+			validationFocus(regular.dni, e.target, e.target.name);
+		break;
+	}
+}
 
+const validationFocus = function(expression, input, field) {
+	if(expression){
+		document.getElementById(`group-${field}`).classList.remove('form-group-incorrect');
+		document.querySelector(`#group-${field} .form-input-error`).classList.remove('form-input-error-active');
+	} 
+}
 
 const validationField = function(expression, input, field) {
 	if(expression.test(input.value)){
@@ -111,14 +148,11 @@ const validationAge = function(){
 }
 
 
-focusMethod= function focus() {
-	document.getElementById(`group-age`).classList.remove('form-group-incorrect');
-	document.querySelector(`#group-age .form-input-error`).classList.remove('form-input-error-active');
-	document.querySelector(`#group-age .form-input-error2`).classList.remove('form-input-error-active');
-}
-	
+
+
 inputs.forEach(function(input) {
 	input.addEventListener('blur', validationForm);
+	input.addEventListener('focus', focusMethod);
 });
 
 form.addEventListener('submit', function(e) {
