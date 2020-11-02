@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Subscription</title>
+
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/fonts.css">
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/subscription.css">
+
+    <link href="//db.onlinewebfonts.com/c/9292cc35e4f1fd3bee22274764613e63?family=LeadvilleW00-Regular" rel="stylesheet" type="text/css"/>
+	
+</head>
+<body>
+	<header class="flex-head">
+        <div class="sandwich-box">
+            <div class="sandwich-icon"></div>
+            <div class="sandwich-icon"></div>
+            <div class="sandwich-icon"></div>
+        </div>
+
+        <div>
+            <h1>Responsive News</h1>
+        </div>
+        
+        <div class="login">
+            <p>Sign up</p>
+            <a href="subscription.html" target="_self"><img src="img/login.png" alt=""></a>
+        </div>
+    </header>
+
+	<main>
+		<form action="" class="form" id="form">
+			<div class="form-group-input" id="group-name">
+				<label for="name" class="form-label">Full Name</label>
+				<div class="form-group-input">
+					<input type="text" class="form-input" name="name" id="name" placeholder="Rick Sanchez">
+				</div>
+				<p class="form-input-error">
+					The full name must contain at least three characters for the name, a space and three characters for the last name, numbers and ()""./&@ are not accepted.</p>
+			</div>
+
+			<div class="form-group-input" id="group-mail">
+				<label for="mail" class="form-label">Email</label>
+				<div class="form-group-input">
+					<input type="email" class="form-input" name="mail" id="mail" placeholder="mail@mail.com">
+				</div>
+				<p class="form-input-error">Enter a valid email address.</p>
+			</div>
+
+			<div class="form-group-input" id="group-password">
+				<label for="password" class="form-label">Password</label>
+				<div class="form-group-input">
+					<input type="password" class="form-input" name="password" id="password">
+				</div>
+				<p class="form-input-error">The password must have a minimum of 8 characters and between them at least one number.</p>
+			</div>
+
+			<div class="form-group-input" id="group-password2">
+				<label for="password2" class="form-label">Repeat Password</label>
+				<div class="form-group-input">
+					<input type="password" class="form-input" name="password2" id="password2">
+				</div>
+				<p class="form-input-error">Both passwords must be the same.</p>
+			</div>
+
+			<div class="form-group-input" id="group-age">
+				<label for="age" class="form-label">Age</label>
+				<div class="form-group-input">
+					<input type="number" class="form-input" name="age" id="age" placeholder="70">
+				</div>
+				<p class="form-input-error">Must be over 18 years old.</p>
+				<p class="form-input-error2">The number entered is not valid.</p>
+			</div>
+
+			<div class="form-group-input" id="group-phone">
+				<label for="phone" class="form-label">Phone</label>
+				<div class="form-group-input">
+					<input type="number" class="form-input" name="phone" id="phone" placeholder="4491234567">
+				</div>
+				<p class="form-input-error">the phone must contain between 7 and 10 digits without spaces, -, ().</p>
+			</div>
+
+			<div class="form-group-input" id="group-street">
+				<label for="street" class="form-label">Street Address</label>
+				<div class="form-group-input">
+					<input type="text" class="form-input" name="street" id="street" placeholder="Wallaby 42">
+				</div>
+				<p class="form-input-error">The street address must contain a minimum of 5 characters in the following order: street name, a space and number. Ex: Wallaby 42.</p>
+			</div>
+			
+			<div class="form-group-input" id="group-city">
+				<label for="city" class="form-label">City</label>
+				<div class="form-group-input">
+					<input type="text" class="form-input" name="city" id="city" placeholder="3412345678">
+				</div>
+				<p class="form-input-error">The name of the city must have a minimum of 3 characters.</p>
+			</div>
+			
+			<div class="form-group-input" id="group-cp">
+				<label for="cp" class="form-label">Postal Code</label>
+				<div class="form-group-input">
+					<input type="text" class="form-input" name="cp" id="cp" placeholder="R20">
+				</div>
+				<p class="form-input-error">The postal code must have a minimum of 3 characters, at least one letter and two numbers without space between them. Ex: R20.</p>
+			</div>
+			
+			<div class="form-group-input" id="group-dni">
+				<label for="dni" class="form-label">DNI</label>
+				<div class="form-group-input">
+					<input type="number" class="form-input" name="dni" id="dni" placeholder="40234567">
+				</div>
+				<p class="form-input-error">The DNI must have at least 7 digits.</p>
+			</div>
+
+			<div class="form-message" id="form-message">
+				<p><b>Error:</b> Please complete the fields correctly.</p>
+			</div>
+
+			<div class="form-group-input form-group-input-btn-send">
+				<button type="submit" class="form-btn">Subscribe</button>
+				<p class="form-message-success" id="form-message-success">Form submitted successfully!</p>
+			</div>
+		</form>
+	</main>
+
+	<footer>
+        <div class="flex-foot">
+            <div class="find-box">
+                <h3>Find us here</h3>
+                <div  class="find-us">
+                    <a href="" target="_self">
+                        <img src="img/twitter.png" alt="">
+                    </a>
+                    <a href="" target="_self">
+                        <img src="img/facebook.png" alt="">
+                    </a>
+                    <a href="" target="_self">
+                        <img src="img/instagram.png" alt="">
+                    </a>
+                </div>
+            </div>
+            <div id="banner-box">
+                <a href="">
+                    <img src="img/samsung.jpg" alt="" class="banner-foot">
+                </a>
+            </div>
+            <div class="explore_responsive_foot">
+               <a href="" target="_self">World</a>
+               <a href="" target="_self">Politics</a>
+               <a href="" target="_self">Tech</a>
+               <a href="" target="_self">Sports</a>
+               <a href="" target="_self">Food</a>
+               <a href="" target="_self">Arts & Entertainment</a>
+               <a href="" target="_self">Opinion</a>
+               <a href="" target="_self">Coronavirus</a>
+            </div>
+        </div>
+
+        <div class="copyright">
+            <span>© 2020 Responsive News</span>
+            <span class="reserve">All Rights Reserved.</span>
+        </div>
+    </footer>
+
+	<script src="js/subscription.js"></script>
+</body>
+</html>
