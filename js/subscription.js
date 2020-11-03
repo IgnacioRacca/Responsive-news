@@ -14,7 +14,7 @@ const regular = {
 }
 
 const fields = {
-	names: false,
+	name: false,
 	mail: false,
 	password: false,
 	age: false,
@@ -167,11 +167,22 @@ inputs.forEach(function(input) {
 form.addEventListener('submit', function(e) {
 	e.preventDefault();
 	if(fields.name && fields.mail && fields.password && fields.age && fields.phone && fields.street && fields.city && fields.cp && fields.dni){
+		//document.getElementById('form-message-success').classList.add('form-message-success-active');
+		alert('Data uploaded to the form \n\n'+'Full Name: ' + e.target.name.value +'\n'+'Email: ' + e.target.mail.value +'\n'+'Age: ' + e.target.age.value +'\n'+'Phone: ' + e.target.phone.value +'\n'+'Street Address: ' + e.target.street.value +'\n'+'City: ' + e.target.city.value +'\n'+'Postal Code: ' + e.target.cp.value +'\n'+'DNI: ' + e.target.dni.value +'\n'); 
 		form.reset();
-		alert('Data uploaded to the form \n\n'+'Full Name: ' + e.target.name.value +'\n'+'Email: ' + e.target.mail.value +'\n'+'Age: ' + e.target.age.value +'\n'+'Phone: ' + e.target.phone.value +'\n'+'Street Address: ' + e.target.street.value +'\n'+'City: ' + e.target.city.value +'\n'+'Postal Code: ' + e.target.cp.value +'\n'+'DNI: ' + e.target.dni.value +'\n'); 
-		document.getElementById('form-message-success').classList.add('form-message-success-active');
+		
 	} else {
-		document.getElementById('form-message').classList.add('form-message-active');
-		alert('Data uploaded to the form \n\n'+'Full Name: ' + e.target.name.value +'\n'+'Email: ' + e.target.mail.value +'\n'+'Age: ' + e.target.age.value +'\n'+'Phone: ' + e.target.phone.value +'\n'+'Street Address: ' + e.target.street.value +'\n'+'City: ' + e.target.city.value +'\n'+'Postal Code: ' + e.target.cp.value +'\n'+'DNI: ' + e.target.dni.value +'\n'); 
+		//document.getElementById('form-message').classList.add('form-message-active');
+		var string='';
+		for (const property in fields) {
+			if(fields[property] === false){
+				string += property; 
+				string +=':  invalid information. \n';
+				document.getElementById(`group-${property}`).classList.add('form-group-incorrect');
+				document.querySelector(`#group-${property} .form-input-error`).classList.add('form-input-error-active');
+			}
+		  }
+		alert('The following fields have wring information, please correct them \n\n'+string);
 	}
+
 });
