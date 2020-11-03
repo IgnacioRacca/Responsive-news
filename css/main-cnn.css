@@ -1,0 +1,167 @@
+
+@font-face {
+    font-family: "CNN Sans Display W04 Light"; 
+    src: url("//db.onlinewebfonts.com/t/61d730ffc5624e35a3588e259598a4b7.eot"); 
+    src: url("//db.onlinewebfonts.com/t/61d730ffc5624e35a3588e259598a4b7.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/61d730ffc5624e35a3588e259598a4b7.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/61d730ffc5624e35a3588e259598a4b7.woff") format("woff"), url("//db.onlinewebfonts.com/t/61d730ffc5624e35a3588e259598a4b7.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/61d730ffc5624e35a3588e259598a4b7.svg#CNN Sans Display W04 Light") format("svg"); }
+
+@font-face {
+    font-family: "Battersea SLAB WEB Light"; 
+    src: url("//db.onlinewebfonts.com/t/c170d9f968b8f9985fb725644f01f589.eot"); 
+    src: url("//db.onlinewebfonts.com/t/c170d9f968b8f9985fb725644f01f589.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/c170d9f968b8f9985fb725644f01f589.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/c170d9f968b8f9985fb725644f01f589.woff") format("woff"), url("//db.onlinewebfonts.com/t/c170d9f968b8f9985fb725644f01f589.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/c170d9f968b8f9985fb725644f01f589.svg#Battersea SLAB WEB Light") format("svg"); }
+
+@font-face {
+    font-family: "Battersea SLAB WEB SemBd"; 
+    src: url("//db.onlinewebfonts.com/t/f56fb0a4f9a7bab9ce29462a7321876c.eot"); 
+    src: url("//db.onlinewebfonts.com/t/f56fb0a4f9a7bab9ce29462a7321876c.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/f56fb0a4f9a7bab9ce29462a7321876c.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/f56fb0a4f9a7bab9ce29462a7321876c.woff") format("woff"), url("//db.onlinewebfonts.com/t/f56fb0a4f9a7bab9ce29462a7321876c.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/f56fb0a4f9a7bab9ce29462a7321876c.svg#Battersea SLAB WEB SemBd") format("svg"); }
+
+
+
+
+
+body{
+    width: 1100px;
+    margin: auto;
+}
+    
+h1{
+    font-family: "Battersea SLAB WEB Light";
+    font-size: 60px;
+    width: 750px;
+    font-weight: normal;
+    line-height: 1.2;
+    margin-bottom: 5px;
+    margin-top: 44px;
+}
+
+h2{
+    font-size: 21px;
+    font-family: "Battersea SLAB WEB SemBd";
+    text-emphasis: none;
+    margin-bottom: 3px;
+    margin-top: 30px;
+}
+
+.what_happens{
+    font-family: "Battersea SLAB WEB Light";
+    font-size: 18px;
+}
+
+h3 {
+    font-family: "Battersea SLAB WEB SemBd";
+    font-size: 18px;
+}
+
+a{
+    color: #000000;
+}
+
+.social_network_top, .social_network_top ul{
+    margin:0px;
+    padding:0px;
+}
+
+.social_network_top img{
+    width: 20px;
+    padding: 15px;
+    margin-top: 30px;
+}
+
+.social_network_top li{
+    display: inline;
+    margin:0px;
+    padding:0px;
+}
+
+.gallery{
+    padding: 5px 0;
+    width: 650px;
+    border-bottom: 1px solid #9b9b9b;
+}
+.related{
+    width: 650px;
+    border-bottom: 1px solid #9b9b9b;
+    border-top: 1px solid #9b9b9b;
+}
+
+.related h3{
+    margin: 0px;
+}
+
+.related a{
+    text-decoration: none;
+}
+
+.social_bar li{
+    display: inline-block;
+}
+
+.gallery img{
+    width: 650px;
+}
+
+.main_gallery p{
+    width:870px;
+}
+
+.main_gallery img{
+    width:900px;
+    margin-bottom: 15px;
+}
+
+.main_gallery{
+    border-bottom: 1px solid #9b9b9b;
+    padding-bottom: 20px;
+    margin-bottom: 50px;
+}
+
+.article_title span, .caption_credit{
+    color: #9b9b9b;
+}
+
+.article_title span{
+    padding-top: 8px;
+    margin: 0px;
+}
+
+.counter_gallery span{
+    font-family: "CNN Sans Display W04 Light";
+    font-size: 15px;
+}
+
+.article_title span, .caption_comment,.caption_credit{
+    font-family: "CNN Sans Display W04 Light";
+    font-size: 12px;
+}
+
+.caption_gallery{
+    margin-top: 5px;
+}
+
+.article_paragraph{
+    font-family: "CNN Sans Display W04 Light";
+    font-size: 15px;
+    width: 650px;
+    line-height: 1.5;
+    margin-bottom: 15px;
+}
+
+.article_paragraph a{
+    text-decoration: underline;
+}
+
+.article_paragraph a:hover{
+    color: #9b9b9b;
+}
+
+.paragraph_cite{
+    text-decoration: b;
+    font-style: normal;
+}
+
+.grid_what_happens{
+    display: grid;
+    grid-template-columns: 200px 500px;
+    grid-gap: 20px;
+    padding: 30px 0px;
+    margin-top: 25px;
+}

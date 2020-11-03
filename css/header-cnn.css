@@ -1,0 +1,37 @@
+.menu li{
+    margin-top: 3px;
+    display: inline-block;
+}
+.menu img{
+    width: 20px;
+}
+
+.menu a{
+    text-decoration: none;
+    font-family: "Battersea SLAB WEB Light";
+    font-size: 16px;
+    color: #4a4a4a;
+    padding-right: 27px;
+}
+
+.menu a:hover{
+    text-decoration: underline;
+}
+
+.grid_header{
+    display: grid;
+    grid-template-columns: 535px 700px;
+    grid-gap: 20px;
+}
+
+.logo img{
+    width: 130px;
+}
+
+.sticky {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    padding: 0px;
+    background-color: #ffffff;
+  }

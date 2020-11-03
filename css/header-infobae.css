@@ -1,0 +1,79 @@
+.menu1 a, .menu2 a{
+    text-decoration: none;
+    color: #000000;
+}
+
+.menu1 li, .menu2 li{
+    list-style: none;
+    display: inline-block;
+}
+
+header h1{
+    font-size: 72px;
+    color: #ffa500;
+    font-weight: lighter;
+    font-family: arial;
+    text-align: center;
+    margin: 0px;
+    padding: 0px;
+}
+
+.date{
+    font-size: 14px;
+    color: #939393;
+    font-weight: lighter;
+    font-family: arial;
+    padding-right: 10px;
+    padding-left: 100px;
+}
+
+.menu1{
+    font-size: 14px;
+    color: #000000;
+    font-weight: bold;
+    font-family: arial;
+    padding-bottom: 15px;
+    border-bottom: 3px solid #000000;
+    text-align:center;
+}
+
+.section_head{
+    padding-left: 15px;
+}
+
+
+
+
+
+/* MENU2---------------------------------------------------------------------------------------------------------------*/
+
+.menu2{
+    font-size: 14px;
+    color: #000000;
+    font-family: arial;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #ccc;
+}
+
+.menu2 li{
+    padding-right: 20px;
+}
+
+.register a{
+    color: #ffa500;
+}
+
+
+/*BUTTOM---------------------------------------------------------------------------------------------------------------*/
+
+button a {
+    text-decoration: none;
+}
+
+button{
+    position: absolute;
+    top: 180px;
+    left: 1210px;
+    background-color: #ff0000;
+}

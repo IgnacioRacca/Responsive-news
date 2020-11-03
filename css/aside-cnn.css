@@ -1,0 +1,143 @@
+.aside_more_from_cnn{
+    width: 300px;
+    color: #FFF8F9;
+    padding-top: 5px;
+    position: absolute;
+    top: 1840px;
+    left: 1210px;
+}
+
+.aside_more_from_cnn a{
+    text-decoration: none;
+    color: #FFF8F9;
+}
+
+.aside_more_from_cnn a:hover{
+    text-decoration: underline;
+    color: #FFF8F9;
+}
+
+.paid_img, .more_from_img{
+    width: 120px;
+}
+
+.paid_first, .more_from_first{
+    width: 300px;
+}
+
+.title_aside_more_from_1{
+    font-size: 26px;
+}
+
+.grid_more_from{
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-areas: 'header header' 'first_notice first_notice';
+    grid-gap: 10px;
+    justify-content: space-evenly;
+    background-color: #32335A;
+    padding: 10px;
+}
+
+.paid_content h3, .more_from_title { 
+    grid-area: header; 
+}
+
+.paid_first, .first_notice{
+    grid-area: first_notice; 
+}
+
+.notice{
+    width: 130px;
+}
+
+.paid_content{
+    width: 300px;
+    padding-top: 5px;
+    position: absolute;
+    top: 3580px;
+    left: 1210px;
+}
+
+.grid_paid_content{
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-areas: 'header header' 'first_notice first_notice';
+    grid-gap: 10px;
+    justify-content: space-evenly;
+    padding: 10px;
+}
+.paid_content a{
+    text-decoration: none;
+    font-family: "CNN Sans Display W04 Light";
+    font-size: 14px;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+}
+
+.paid_content a:hover{
+    color: #cc0000;
+}
+
+.paid_content a i{
+    font-family: "CNN Sans Display W04 Light";
+    font-size: 12px;
+    color: #9b9b9b;
+    margin-top: 0px;
+    padding-top: 0px;
+}
+
+.more_from_cnn_list a, .ul_paid_content a{
+    text-decoration: none;
+    font-family: "CNN Sans Display W04 Light";
+    font-size: 16px;
+}
+
+.more_from_cnn_list a:hover, .ul_paid_content a:hover{
+    color: #cc0000;
+}
+
+.ul_paid_content a i{
+    font-family: "CNN Sans Display W04 Light";
+    font-size: 14px;
+    color: #9b9b9b;
+    margin-top: 0px;
+    padding-top: 0px;
+}
+
+.ul_paid_content{
+    list-style-type: none;
+    padding: 0px;
+    margin: 0px;
+}
+
+.paid_list{
+    width: 130px;
+    padding-top: 5px;
+    position: absolute;
+    top: 4200px;
+    left: 1220px;
+}
+
+.more_from_cnn_list{
+    width: 130px;
+    padding-top: 5px;
+    position: absolute;
+    top: 4200px;
+    left: 1360px;
+}
+
+.more_from_cnn_list li, .paid_list li{
+    padding-bottom: 8px;
+    line-height: 1.2;
+}
+
+
+.more_from_cnn_list li{
+    list-style-type: disc;
+}
+
+.ul_more_from_cnn{
+    padding: 0px;
+    margin: 0px;
+}

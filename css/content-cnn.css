@@ -1,0 +1,242 @@
+
+@font-face {
+    font-family: "Sans"; 
+    src: url("//db.onlinewebfonts.com/t/952bab25f6798d6bb1937d67e9bee4dd.eot"); 
+    src: url("//db.onlinewebfonts.com/t/952bab25f6798d6bb1937d67e9bee4dd.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/952bab25f6798d6bb1937d67e9bee4dd.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/952bab25f6798d6bb1937d67e9bee4dd.woff") format("woff"), url("//db.onlinewebfonts.com/t/952bab25f6798d6bb1937d67e9bee4dd.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/952bab25f6798d6bb1937d67e9bee4dd.svg#Sans") format("svg"); 
+}
+
+
+
+
+
+/* PAID CONTENT*/
+
+
+.paid_content_foot a{
+    text-decoration: none;
+    font-family: "CNN Sans Display W04 Light";
+    font-size: 14px;
+}
+
+.paid_content_foot a i{
+    font-family: "CNN Sans Display W04 Light";
+    font-size: 12px;
+    color: #9b9b9b;
+    margin-top: 0px;
+    padding-top: 0px;
+}
+
+.paid_content_foot img, .paid_content_foot p {
+    width: 120px;
+    padding-bottom: 3px;
+    margin-bottom: 3px;
+}
+
+.paid_content_foot h3{
+    color: #4a4a4a;
+    padding: 0px 10px;
+}
+
+.paid_content_foot{
+    width: 650px;
+    border-top: 1px solid #9b9b9b;
+    border-bottom: 1px solid #9b9b9b;
+    margin-bottom: 20px;
+    line-height: 1.2;
+}
+
+.ul_paid_content_foot a, .ul_more_from_cnn_foot a {
+    text-decoration: none;    
+}
+
+.ul_paid_content_foot a:hover, .ul_more_from_cnn_foot a:hover {
+    color: #cc0000;    
+}
+
+
+/*CNN CONTENT*/
+
+
+.ul_more_from_cnn_foot i, .ul_paid_content_foot i{
+    color: #9b9b9b;
+    font-size: 12px;
+    margin-top: 0px;
+    padding-top: 0px;
+    line-height: 1;
+}
+
+.ul_paid_content_foot li {
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+}
+
+.ul_more_from_cnn_foot p, .ul_paid_content_foot p{
+    margin-top: 0px;
+    padding-top: 0px;
+    line-height: 1;
+}
+
+
+
+
+.ul_more_from_cnn_foot, .ul_paid_content_foot{
+    padding-left: 10px;
+    width: 280px;
+    padding: 0px;
+    margin:0px;
+}
+
+
+
+.cnn_content a{
+    text-decoration: none;
+    font-family: "Sans";
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 1.2;
+}
+
+.cnn_content ul{
+    padding: 0px;
+    margin:0px;
+}
+
+.label{
+    color: #9b9b9b;
+    padding-top: 0px;
+    margin: 0px;
+    font-size: 12px;
+}
+.cnn_content a:hover{
+    color: #cc0000;
+}
+.cnn_content img{
+    width: 200px;
+}
+
+.cnn_content li{
+    display: inline-block;
+    width: 200px;
+    padding-right: 15px;
+    margin: 0px;
+    padding-top: 0px;
+
+}
+
+.ul_more_from_cnn_foot li{
+    list-style-type: disc;
+}
+
+
+.grid_paid_more{
+    margin:0px;
+    padding:0px;
+}
+
+
+
+
+
+
+.ul_more_from_cnn_foot h3, .ul_paid_content_foot h3 { 
+    grid-area: header; 
+}
+
+
+.ul_more_from_cnn_foot li, .ul_paid_content_foot li { 
+    grid-area: item; 
+}
+
+
+.grid_paid_more {
+    display: grid;
+    grid-template-areas: 'header' 'item1';
+    grid-template-columns: auto auto;
+    grid-gap: 10px;
+    padding: 10px;
+    justify-content: space-evenly;
+    width: 650px;
+  }
+
+
+.grid_more_from_block{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-gap: 10px;
+    justify-content: space-evenly;
+    background-color: #32335A;
+    padding: 0px;
+    margin:0px;
+    font-family: "CNN Sans Display W04 Light";
+    color: #FFF8F9;
+    margin-bottom: 20px;
+    width: 650px;
+    
+}
+
+.more_from_block h3{
+    padding-left: 10px;
+    padding-top: 10px;
+    margin-top: 0px;
+    grid-column: span 4;
+}
+
+
+
+
+.item1{
+    width: 500px;
+    grid-column: span 4;
+    padding-left: 10px;
+    padding-top: 10px;
+    margin-top: 0px;
+}
+
+.first_bloc{
+    grid-column: 1/2;
+}
+
+.item{
+    width: 120px;
+    padding: 5px;
+    margin: 5px;
+    font-size: 18px;
+    line-height: 1.2;
+    font-weight: lighter;
+}
+
+.img_block{
+    width: 120px;
+}
+
+.more_from_block li{
+    display: inline-block;
+}
+
+.ul_more_from_block{
+    padding:0px;
+    margin: 0px;
+}
+
+.more_from_block a{
+    text-decoration: none;
+    color: #FFF8F9;
+}
+
+
+
+
+
+
+/*BUTTON*/
+
+button a {
+    text-decoration: none;
+}
+
+button{
+    position: absolute;
+    top: 300px;
+    left: 1210px;
+    background-color: #ff0000;
+}
