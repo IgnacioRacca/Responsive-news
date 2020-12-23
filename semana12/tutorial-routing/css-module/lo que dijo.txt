@@ -1,0 +1,16 @@
+comenzo con una hoja de estilo basica y un app.js con hola mundo
+
+como usar css modules en aplicacion de react
+
+si modifico el webpakc no preciso hacer el cambio en el nombre del archivo
+
+en el archivo App.css lo cambio a App.module.css, ahora como es un modulo en App.js debo importarlo como un objeto es decir, 
+import App from './App.module.css';
+
+si hago un console.log(App) me va a devolver un objeto con todas las propiedades, el contenido de cada propiedad es un nombre raro ya que le cambia el formato para evitar la colision
+
+se observa que la clases que tenia ya no son validas para ello debo cambiarlo por ej className={Styles.container}
+
+
+
+

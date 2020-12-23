@@ -1,0 +1,64 @@
+npx create-react-app nombre de la app
+
+npm install react-router-dom
+
+npm start para probar que ande
+
+copia el codigo de app.js y crea about.js para pegar el codigo y modificarlo.
+
+crea shop.js
+
+crea navigation.js
+
+lo recomendable es crear una carpeta component y meter todo alli
+
+en navigation pongo un titulo y una lista 
+
+importo Nav, about y shop en App y luego dentro del div insertyo el <Nav /> <About /> <Shop /> si lo agrego asi dentro del div me va a renderizar todo, lo que debo hacer es lo sigueinte, 
+en app.css creo nuevo estilos
+
+nav { } luego creo el className nav-links
+
+importa react-router en app.js
+
+en los corchetes especifico que voy a importar desde react-router-dom y lo renombro como router en este caso tambien como switch y como route y esto lo empre para envolver en <Router> los diferentes componentes y asi tienen las habilidad de enrutamiento
+
+Route lo que hace es renderizar un componente basado en su url, asi lo uno que va a renderiza es lo que se encuentra en ese path para el componente especificado ej
+<Route path="/about" component={About}/>
+
+hay que tener cuidate cuando quiero ir a home ya que su path="/" si no pongo exact previamente me va a renderizar siempre home en todas las url lo mismo sucede cuando quiero ir a un elemento especifico de una seccion, si no pongo el extac en la gral siempre va a renderizar el elemento padre
+
+el switch detiene todo el proceso de pasar por todas las rutas  tan pronto como llega a una coincidencia en la url y solo renderiza ese componente
+
+importo en nav react-router-dom la propiedad link se aplica como la propiedad "a" de html que me transforma las cosas en links
+
+creo el estilo navStyle
+
+
+creacion de routes dinamicos
+
+agrego en import react {useState, useEffect}
+
+useState contiene la informacion que obtenemos de la aplicauseEffec ejecuta esa llamada de recuperacion cuando se monta nuestro componente
+
+crea una llamada de recuperacion que se llama fetchItems que va a ser igual a una funcion async porque proviene de la base de datos
+
+arriba de esta funcion empleo useEffet... dentro de la funcion coloco lo que debe hacer  luego una coma y coloco cual es la variable que hace prender la accion... si coloco [] significa que solo se va a ejecutar cuando se monta la funcion esa sola vez
+
+crear un useState para colocar esos elementos en una matriz
+
+crea la parte de <LINK> en shop importo react-dom
+
+en app.js creo un route
+
+crea un nuevo componente itemDetail.js copi lo de shop
+
+modifica [items, setItems ] por const [item, setItem] = useState({});
+y modifico const fetchItem = async () => {
+
+
+importo ItemDetail en App.js
+
+en itemdetail creo una constante para traer un item especifico
+
+en el div agrego la informacion del item

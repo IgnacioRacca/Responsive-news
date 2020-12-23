@@ -1,0 +1,74 @@
+el metodo react hook reemplaza las clases basadas en componentes
+
+se va a ver especificamente useEffect
+
+lo que va a hacer es un contador que incremente cuando clickee
+
+el contructor  declara que el estado inicial del conteo es 0
+
+h2 es solo para mostrar el valor del conteo y para ello llamamos al estado de nuestro conteo actual
+
+button llama a la funcion handleIncrementOnClick
+
+corto la parte del class hasta return y creo un archivo .JSX y en app tambien elimino la parte de export esto corto
+
+class App extends Component {
+constructor() {
+  super();
+    this.state = {
+      count: 0
+    }
+  };
+
+  render(){
+    const handleIncrementOnClick = () => {
+      this.setState({
+        count: this.state.count + 1
+      })
+    };
+
+
+    return (
+
+        }
+ )}
+export default App;
+
+creo App_class.js solo para referencia ahi tiene una cpia de lo que era app.js
+
+lo primeroque hay que entender del metodo con hooks es que los componente ya no son clases sino que son funciones
+
+normalmente los componentes basados en clases dentro tienen un render y dentro de ese render y dentro tendran un return con todo el codigo JSX
+las funciones basado en componentes  no es necesario esto
+
+para declarar la varialbe coutn empleamo la shooks llamada useState la cual debe ser importada de react
+
+basicamente lo que digo conuseState es que llamo a dicha funcion la paso una variable  y de eso obtengo una matriz que tiene dos valores el primero es el valor de la cuenta el segundo es la funcion setCoutn como se nota en las clases de react si cambia el valor de su variable se emplea la funcion setState 
+
+el h2 se cambia a simplemente count 
+
+todo lo que esta dentro de la funcion funciona como un render
+
+
+aplica useEffect
+en lugar de  mostrar el contador en la app lo que hace es crear un boton que muestre el click y contador y sque si lo vuelve a apretar lo oculte, la logica es simple solo solo tiene una variable llamada mostrar para esto crea un archivo counter_class.js
+
+a logica es bastante simple en aPp.js tengo  una variable llamada showingCounter en state configurada en false y cuando clickeo el boton se cargara lo contrario es decir si esta oculto se muestra y si esta visible se oculta
+
+
+{this.state.showingCounter && <Counter />} esta linea lo que hace es renderizar Counter cuando es true
+
+en counter_class agreaego un par de metodos de ciclo de vida
+
+componentDidMount se ejecuta siempre que el componente se monta por primera vez
+
+componentDidUpdste se ejecuta cada vez que se acualiza el componente
+
+componentDidUnmount se ejecuta cuando se desmonta el componente
+
+ahora veo como es la logicica bassada en funciones de componentes para ello creo counter_hooks.js
+
+useEffect toma dos parametros el primero es una funcion arrow y el segundo es un array
+
+
+useEffect no puede ir dentro de una funcion ni de un condicional

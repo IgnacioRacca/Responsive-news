@@ -1,0 +1,52 @@
+anatomia de un componente
+
+Class Post extends React.Coomoponent {
+    state = { //objeto
+        title: 'post one',
+        body: 'this is my page'
+    }
+
+    render(){ // es un metodo
+        return ( //retorna JSX (es similar a html pero puede tener expresiones de JS)
+            <div>
+                <h3>{this.state.title}</h3>
+                <p>{this.state.body}</p>
+            </div>
+        )
+    }
+}.
+
+
+en terminal
+ npx create-react-app . // uso el punto para crearlo en la carpeta que me encuentro
+
+
+ en public/index.html
+ id=root es la salida para nuestro react a la SPA
+
+ en src/index.JS es el punto de entrada a react, se inicializa arriba las librerias importantes importandolas como la aplicacion principal
+
+
+ npm start arranca la app
+
+ para llamar el componentes desde app.js tengo que importarlo y luego para renderizarlo creo su etiqueta customizada, en este caso <Todos />
+
+
+ en app.js
+ declaro el state antes de renderizar
+ y en render antes del return pedo poner un console.log para ver esos estados alguna propiedad 
+
+
+las propiiedades se agregan como si fuera un atributo de html
+
+rce +tab me crea el modelo de react
+
+rfc me crea el modelo de funcion de react
+
+UUID es un generador de ids aleatorio, se instala con npm i uuid
+
+npm i react-router-dom instala el router de react
+
+npm i axios es una libreria http
+
+npm un build crear los archivos estaticos que se van a ejecutar (creo)

@@ -1,0 +1,24 @@
+npm i react-router-dom
+
+importo {browserRouter}
+
+creo dentro de Router una lista con links que se acceden tipeando o haciendo click
+
+creo un switch con los routes
+
+creo una carpeta pages
+con home.js about.js y user.js
+
+luegho en app.js las importo
+
+ahora vamos con las hooks
+en la pages en los parentesis agrego match para que me renderise la coincidencia
+
+para aplicar la hook importo userParams y ya no preciso el match en User(match) ni tampoco match.params.name
+
+en l link de about donde esta el to coloco un objeto con pathname y un useState
+en about importo useLocation
+
+ahora importo useHistory
+
+
